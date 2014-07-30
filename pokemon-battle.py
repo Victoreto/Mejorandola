@@ -28,7 +28,7 @@ while pikachu.hp > 0 and jigglypuff.hp > 0:
         print "Ataque de jigglypuff"
         turno = 1
 
-if(pikachu.hp <= 0):
+if pikachu.hp <= 0:
     jigglypuff.win()
 else:
     pikachu.win()
