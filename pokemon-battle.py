@@ -18,8 +18,8 @@ pikachu = Pikachu()
 jigglypuff = Pigglypuff()
 turno = random.randint(0,1)
 
-while(pikachu.hp > 0 and jigglypuff.hp > 0):
-    if (turno == 1):
+while pikachu.hp > 0 and jigglypuff.hp > 0:
+    if turno == 1:
         jigglypuff.hp = jigglypuff.hp - pikachu.ad
         print "Ataque de pikachu"
         turno = 0
