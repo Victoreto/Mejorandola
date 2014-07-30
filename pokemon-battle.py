@@ -1,27 +1,30 @@
-class pikachu():
-	hp = 100
-	ataque = 55
+class Pikachu():
+    hp = 100
+    ad = 55
 
-	def win(self):
-		print "pikachu win"
+    def win(self):
+        print "Pikachu Win!"
 
-class jigglypuff():
-	hp = 100
-	ataque = 45
+class Pigglypuff():
+    hp = 100
+    ad = 45
 
-	def win(self):
-		print "Jigglypuff win"
+    def win(self):
+        print "Jigglypuff Win!"
 
+pikachu = Pikachu()
+jigglypuff = Pigglypuff()
 turno = 1
 
-while(pikachu.vida > 0 and jigglypuff.vida > 0):
-	if (turno == 1):
-		jigglypuff.vida = jigglypuff.vida - pikachu.ataque
-	else:
-		pikachu.vida = pikachu.vida - jigglypuff.ataque
+while(pikachu.hp > 0 and jigglypuff.hp > 0):
+    if (turno == 1):
+        jigglypuff.hp = jigglypuff.hp - pikachu.ad
+        turno = 0
+    else:
+        pikachu.hp = pikachu.hp - jigglypuff.ad
+        turno = 1
 
-if(pikachu.hp<=0):
-	jigglypuff.win()
+if(pikachu.hp <= 0):
+    jigglypuff.win()
 else:
-	pikachu.win()
-
+    pikachu.win()
