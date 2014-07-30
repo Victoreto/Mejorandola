@@ -1,3 +1,5 @@
+import random
+
 class Pikachu():
     hp = 100
     ad = 55
@@ -14,14 +16,16 @@ class Pigglypuff():
 
 pikachu = Pikachu()
 jigglypuff = Pigglypuff()
-turno = 1
+turno = random.randint(0,1)
 
 while(pikachu.hp > 0 and jigglypuff.hp > 0):
     if (turno == 1):
         jigglypuff.hp = jigglypuff.hp - pikachu.ad
+        print "Ataque de pikachu"
         turno = 0
     else:
         pikachu.hp = pikachu.hp - jigglypuff.ad
+        print "Ataque de jigglypuff"
         turno = 1
 
 if(pikachu.hp <= 0):
