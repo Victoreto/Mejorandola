@@ -1,13 +1,17 @@
 var Pikachu = {
 	"hp":100,
 	"ad":55,
-	"win":function(){console.log("Pikachu Win!");}
+	"win":function(){
+		console.log("Pikachu Win!");
+	}
 };
 
 var Jigglypuff = {
 	"hp":100,
 	"ad":45,
-	"win":function(){console.log("Jigglypuff Win!");}
+	"win":function(){
+		console.log("Jigglypuff Win!");
+	}
 };
 
 turno = Math.floor(Math.random()*2);
@@ -25,7 +29,7 @@ while(Pikachu.hp > 0 && Jigglypuff.hp > 0){
 }
 
 if(Pikachu.hp <= 0){
-	Pikachu.win()
-}else{
 	Jigglypuff.win()
+}else{
+	Pikachu.win()
 }
