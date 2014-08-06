@@ -3,23 +3,29 @@
     <head>
         <meta charset="utf-8" />
         <title>Piedra, Papel o Tijera!</title>
-        <script type="text/javascript" src="js/ppt.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower|Source+Sans+Pro:400,600|Chewy' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/ppt.css">
     </head>
     <body>
     	<header>
-    		<h1>Piedra, Papel o Tijera.</h1>
+    		<h1>Piedra, Papel, Tijera, Lagarto, Spock.</h1>
     	</header>
     	<section id="contenido">
     		<div id="mensaje">Seleciona una opción</div>
-	        <p>
-	        	<select id="selec">
-	        		<option value="0">Piedra</option>
-	        		<option value="1">Papel</option>
-	        		<option value="2">Tijera</option>
-	        	</select>
-	        	<button onclick="jugar()">Play!</button>
-	        	</p>
+            <h2 id="estado"></h2>
+	        <select id="selec">
+	        	<option class="opcion" value="0">Piedra</option>
+	        	<option class="opcion" value="1">Papel</option>
+	        	<option class="opcion" value="2">Tijera</option>
+                <option class="opcion" value="3">Lagarto</option>
+                <option class="opcion" value="4">Spock</option>
+	        </select>
+	    	</br></br>
+	        <div class="center"><a onclick="jugar()" id="btn">Play</a></div>
+            <footer>
+                <p><a href="http://twitter.com/MeDicenKil">@MeDicenKil</a></p>
+            </footer>
+            <script type="text/javascript" src="js/ppt.js"></script>
         </section>
-        
     </body>
 </html>
