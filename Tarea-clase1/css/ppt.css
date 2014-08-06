@@ -51,11 +51,11 @@ footer{
 }
 
 .win{
-
+	color: #59DF20
 }
 
 .lose{
-	color: #440000;
+	color: #F90000;
 }
 
 .draw{
