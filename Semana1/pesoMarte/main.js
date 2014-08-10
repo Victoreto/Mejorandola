@@ -1,9 +1,8 @@
-var peso = document.getElementById('peso');
-var divResul = document.getElementById('pesoEnMarte');
-
 function start(){
-    peso = parseInt(peso.value);
-    if(peso == ''){
+	var peso = document.getElementById('peso');
+	var divResul = document.getElementById('pesoEnMarte');
+	peso = parseInt(peso.value);
+    if(peso === 0 || peso === ''){
         alert('Porfavor ingrese su peso');
     }else{
         var pesoEnMarte = (peso/9.81) * 3.771;
